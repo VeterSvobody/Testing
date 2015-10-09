@@ -1,0 +1,47 @@
+<!DOCTYPE hnml>
+<html>
+<head>
+
+<style type="text/css">
+div label{padding:15px;}
+
+
+</style>
+<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<div> <img id="1" src="1.jpg"><img id="2" src="2.jpg"><img id="3" src="3.jpg"></div>
+	<div>
+	<label>Cменить картинки</label>
+	<p><input type="text" id="a"></p>
+	<p><input type="text" id="b"></p>
+	<p><input type="button" value="Cменить картинки" onclick="changePic()"></p>
+	</div>
+	<script>
+	function changePic()
+				{					
+					var pic1=document.getElementById("1");
+					var pic2=document.getElementById("2");
+					var pic3=document.getElementById("3");
+					
+					var arr=[];
+					arr[1]=pic1;
+					arr[2]=pic2;
+					arr[3]=pic3;
+				
+					var picA=+document.getElementById('a');
+					var	picB=+document.getElementById('b');
+									
+					arr[0]=arr[picA];
+					arr[picA]=arr[picB];
+					arr[picB]=arr[0];
+										
+					arr[1].src=//как вывести элементы массива на экран?		
+					arr[2].src=
+					arr[3].src=
+				}
+
+	</script>
+
+</body>
+</html>
